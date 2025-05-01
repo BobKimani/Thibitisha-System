@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Home,
@@ -92,9 +93,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar, currentPath })
         {/* Navigation */}
         <nav className="flex-1 px-3 space-y-1">
           {sidebarItems.map((item) => (
-            <a
+            <Link
               key={item.path}
-              href="#"
+              to={item.path}
               className={cn(
                 "flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors",
                 currentPath === item.path
@@ -105,26 +106,26 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar, currentPath })
             >
               <span className="mr-3">{item.icon}</span>
               {item.name}
-            </a>
+            </Link>
           ))}
         </nav>
         
         {/* Footer */}
         <div className="mt-auto border-t border-border py-4 px-3">
-          <a
-            href="#"
+          <Link
+            to="/help"
             className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground"
           >
             <HelpCircle size={20} className="mr-3" />
             Help & Support
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="/logout"
             className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-muted-foreground hover:bg-error-50 hover:text-error-700"
           >
             <LogOut size={20} className="mr-3" />
             Logout
-          </a>
+          </Link>
         </div>
       </motion.aside>
     </>

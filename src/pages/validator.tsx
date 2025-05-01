@@ -79,7 +79,7 @@ const ValidatorPage: React.FC = () => {
     >
       <div className="grid grid-cols-12 gap-6">
         <div className="col-span-12 xl:col-span-8">
-          <Tabs value={activeTab} className="w-full">
+          <Tabs className="w-full">
             <div className="flex justify-between items-center mb-6">
               <TabsList>
                 <TabsTrigger 
