@@ -86,7 +86,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar, currentPath })
             <FileBarChart className="h-5 w-5" />
           </div>
           <div className="font-semibold text-lg text-primary-700">
-            Account Validator
+            Thibitisha
           </div>
         </div>
         
