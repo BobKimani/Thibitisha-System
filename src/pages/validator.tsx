@@ -78,7 +78,7 @@ const ValidatorPage: React.FC = () => {
     >
       <div className="grid grid-cols-12 gap-6">
         <div className="col-span-12 xl:col-span-8">
-          <Tabs className="w-full">
+          <Tabs value={activeTab} className="w-full">
             <div className="flex justify-between items-center mb-6">
               <TabsList>
                 <TabsTrigger 
@@ -278,10 +278,6 @@ const ValidatorPage: React.FC = () => {
               </motion.div>
             </AnimatePresence>
           </Tabs>
-        </div>
-        
-        <div className="col-span-12 xl:col-span-4">
-        
         </div>
       </div>
     </Layout>
