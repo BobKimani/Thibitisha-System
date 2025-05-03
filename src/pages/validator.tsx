@@ -11,7 +11,6 @@ import {
 import FileUpload from '../components/file-upload';
 import ValidatedAccountsTable from '../components/validated-accounts-table';
 import ValidationSummary from '../components/validation-summary';
-import BankAPIStatus from '../components/bank-api-status';
 import Layout from '../components/layout/layout';
 import useValidationStore from '../store/validationStore';
 import { Account, AccountStatus, ValidationMode } from '../lib/types';
@@ -282,14 +281,7 @@ const ValidatorPage: React.FC = () => {
         </div>
         
         <div className="col-span-12 xl:col-span-4">
-          <Card>
-            <CardHeader>
-              <CardTitle>Bank API Status</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <BankAPIStatus apis={bankAPIs} />
-            </CardContent>
-          </Card>
+        
         </div>
       </div>
     </Layout>

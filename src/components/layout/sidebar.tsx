@@ -30,10 +30,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar, currentPath })
   const sidebarItems: SidebarItem[] = [
     { name: 'Dashboard', path: '/', icon: <Home size={20} /> },
     { name: 'Validate Accounts', path: '/validate', icon: <FileText size={20} /> },
-    { name: 'API Status', path: '/api-status', icon: <Server size={20} /> },
     { name: 'Reports', path: '/reports', icon: <BarChart3 size={20} /> },
-    { name: 'User Management', path: '/users', icon: <Users size={20} /> },
-    { name: 'Settings', path: '/settings', icon: <Settings size={20} /> },
   ];
   
   const overlayVariants = {
